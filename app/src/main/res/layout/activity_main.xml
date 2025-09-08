@@ -74,8 +74,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Podaj datę i godzinę wyprawy:"
-                android:textSize="20sp"
-                android:layout_gravity="start"/>
+                android:textSize="20sp" />
 
             <DatePicker
                 android:id="@+id/datePicker"
@@ -107,6 +106,35 @@
                     android:id="@+id/switchElf"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dodatkowe przedmioty: "
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="płaszcz elfów"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="lembasy"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="pochodnia"/>
+
             </LinearLayout>
 
         </LinearLayout>
