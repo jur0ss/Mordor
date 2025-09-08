@@ -10,6 +10,7 @@
     tools:context=".MainActivity">
 
 
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -32,9 +33,48 @@
             android:textSize="20sp"/>
 
         <EditText
+            android:id="@+id/editName"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:hint="Wpisz imię"/>
+/>
     </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wybierz rasę:"
+            android:textSize="20sp"/>
+
+        <Spinner
+            android:id="@+id/spinnerRace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Podaj datę wyprawy"
+            android:textSize="20sp"/>
+
+        <DatePicker
+            android:datePickerMode="calendar"
+            android:id="@+id/datePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleY="0.9"
+            android:scaleX="0.9"
+            />
+
 
 </LinearLayout>
