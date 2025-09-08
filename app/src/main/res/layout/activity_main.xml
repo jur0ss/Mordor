@@ -45,7 +45,7 @@
                     android:textSize="20sp"/>
 
                 <EditText
-                    android:id="@+id/editName"
+                    android:id="@+id/edit_name"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"/>
             </LinearLayout>
@@ -84,6 +84,7 @@
                 android:calendarViewShown="false"/>
 
             <TimePicker
+                android:layout_marginTop="-50dp"
                 android:id="@+id/timePicker"
                 android:timePickerMode="spinner"
                 android:layout_width="wrap_content"
@@ -103,7 +104,7 @@
 
                 <Switch
                     android:layout_marginLeft="20dp"
-                    android:id="@+id/switchElf"
+                    android:id="@+id/switch_elf"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
             </LinearLayout>
@@ -118,22 +119,65 @@
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
                 <CheckBox
+                    android:id="@+id/coat_check"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="płaszcz elfów"/>
 
                 <CheckBox
+                    android:id="@+id/lemb_check"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="lembasy"/>
 
                 <CheckBox
+                    android:id="@+id/torch_check"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="pochodnia"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wybierz priorytet marszu: "/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/priority_radiogroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/hidden_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ukryty"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/balanced_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="zbalansowany"/>
+
+                    <RadioButton
+                        android:id="@+id/force_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="forsowny"/>
+
+                </RadioGroup>
 
             </LinearLayout>
 
